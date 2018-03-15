@@ -1,0 +1,23 @@
+{
+  "api": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "leejiahao",
+      "author": "leejiahao"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "name": "leejiahao"
+    }, {
+      "id": 2,
+      "name": "leejiahao"
+    }
+  ]
+}
