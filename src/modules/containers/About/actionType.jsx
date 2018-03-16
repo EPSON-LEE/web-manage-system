@@ -1,0 +1,3 @@
+export const OPEN_MODAL = 'OPEN_MODAL'
+export const SHUTDOWN_MODAL = 'SHUTDOWN_MODAL'
+export const SAVE_REDUCER = 'SAVE_REDUCER'
