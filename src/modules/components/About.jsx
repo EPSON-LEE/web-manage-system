@@ -14,8 +14,9 @@ export default class About extends React.Component {
       console.log(this.props)
       return (
         <div>
-          <button onClick={() => this.props.openModal()}>sdsada</button>
-          <button onClick={() => this.props.getList()}>sdsada</button>
+          <button onClick={() => this.props.openModal()}>openModal</button>
+          <button onClick={() => this.props.getList()}>getList</button>
+          <button onClick={() => this.props.shutModal()}>shutModal</button>
         </div>
       )
     }

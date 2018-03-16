@@ -35,11 +35,3 @@ export const saveReducer = (data) => {
 const get = () => {
     return axios.get('http://localhost:3000/api')
 }
-
-// export let getList = () => {
-//     return (dispatch) => {
-//         fetch('http://localhost:3000/api')
-//         // .then(response => response.join())
-//         .then(json => dispatch(saveReducer(json)))
-//     }
-// }
