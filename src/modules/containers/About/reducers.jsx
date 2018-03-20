@@ -1,7 +1,14 @@
 import * as T from './actionType.jsx'
 import { combineReducers } from 'redux'
 
-let modalStatus = (state = {}, action) => {
+const initialState = {
+  modalStatus: false,
+  data: [],
+  loading: false,
+  error: false
+}
+
+let dataList = (state = initialState, action) => {
     switch(action.type) {
       case T.OPEN_MODAL:
         return {
@@ -13,27 +20,32 @@ let modalStatus = (state = {}, action) => {
           ...state,
           modalStatus: action.modalStatus
         }
+        case T.LOADING:
+        return {
+          ...state,
+          loading: true
+        }
+      case T.SAVE_REDUCER:
+        return {
+          ...state,
+          loading: false,
+          data: action.payload.data
+        }
+      case T.ERROR: {
+        return {
+          ...state,
+          loading: false,
+          error: true
+        }
+      }
       default:
         return state
     }
   }
 
-  let async = (state = {}, action) => {
-    switch(action.type) {
-        case T.SAVE_REDUCER:
-          return {
-            ...state,
-            data: action.payload.data
-          }
-        default:
-          return state
-      }
-  }
-
 
   let root = combineReducers({
-    modalStatus,
-    async
+    dataList
   })
   
   export default root

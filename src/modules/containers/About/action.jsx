@@ -17,18 +17,32 @@ export let openModal = () => {
   }
 
   export let getList = () => async (dispatch, getState) => {
+    //   getState() 可以拿到store中的state
+    //   console.log(getState())
+      loading()
     try {
         let response = await get()
-        await dispatch(saveReducer(response))
+        await dispatch(saveList(response))
     } catch(err) {
-        console.error(err)
+        dispatch(error())
     }
 }
 
-export const saveReducer = (data) => {
+export const saveList = (data) => {
     return {
         type: T.SAVE_REDUCER,
         payload: data
+    }
+}
+
+export const loading = () => {
+    return {
+        type: T.LOADING
+    }
+}
+export const error = () => {
+    return {
+        type: T.ERROR
     }
 }
 

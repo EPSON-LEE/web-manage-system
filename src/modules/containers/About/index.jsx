@@ -6,8 +6,7 @@ import store from '../../store.jsx'
 // 把状态（state）传到组件中
 const mapStateToProps = (state) => {
   return {
-    list: state.modalStatus,
-    async: state.async
+    list: state.dataList
   }
 }
 
