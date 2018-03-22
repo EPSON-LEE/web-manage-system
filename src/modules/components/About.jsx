@@ -1,6 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {connect} from 'react-redux'
+import { openModal, shutModal, getList } from '../containers/About/action.jsx'
 
+
+@connect(state => {
+  return {
+    list: state.modalStatus,
+    async: state.async
+  }
+}, {
+  openModal,
+  shutModal,
+  getList
+})
 export default class About extends React.Component {
     constructor(props) {
       super(props)

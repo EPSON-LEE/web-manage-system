@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
 import App from '../components/App.jsx'
-import About from '../containers/About/index.jsx'
+import About from '../components/About.jsx'
 import Inbox from '../components/Inbox.jsx'
 import Message from '../components/Message.jsx'
 
