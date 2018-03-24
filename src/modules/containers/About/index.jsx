@@ -14,13 +14,13 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     openModal: () => {
-      dispatch(openModal())
+      store.dispatch(openModal())
     },
     shutModal: () => {
-      dispatch(shutModal())
+      store.dispatch(shutModal())
     },
     getList: () => {
-      dispatch(getList())
+      store.dispatch(getList())
     }
   }
 }

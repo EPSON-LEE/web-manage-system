@@ -1,35 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import { DatePicker, Button } from 'antd'
 import { openModal, shutModal, getList } from '../containers/About/action.jsx'
-
 
 @connect(state => {
   return {
-    list: state.modalStatus,
-    async: state.async
+    list: state.dataList
   }
 }, {
   openModal,
   shutModal,
   getList
 })
+
 export default class About extends React.Component {
     constructor(props) {
       super(props)
     }
 
     componentDidMount() {
-      // this.props.saveReducer()
     }
     
     render() {
       console.log(this.props)
+      debugger
       return (
         <div>
-          <button onClick={() => this.props.openModal()}>openModal</button>
-          <button onClick={() => this.props.getList()}>getList</button>
-          <button onClick={() => this.props.shutModal()}>shutModal</button>
+          <DatePicker />
+          <Button onClick={() => this.props.openModal()}>openModal</Button>
+          <Button onClick={() => this.props.getList()}>getList</Button>
+          <Button onClick={() => this.props.shutModal()}>shutModal</Button>
+          <h1>list: {this.props.list.modalStatus + '' }</h1>
         </div>
       )
     }

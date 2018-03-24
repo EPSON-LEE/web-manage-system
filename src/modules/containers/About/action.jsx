@@ -19,7 +19,7 @@ export let openModal = () => {
   export let getList = () => async (dispatch, getState) => {
     //   getState() 可以拿到store中的state
     //   console.log(getState())
-      loading()
+      dispatch(loading())
     try {
         let response = await get()
         await dispatch(saveList(response))
