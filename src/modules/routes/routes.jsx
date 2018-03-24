@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
-import App from '../components/App.jsx'
-import About from '../components/About.jsx'
-import Inbox from '../components/Inbox.jsx'
-import Message from '../components/Message.jsx'
+import App from '../components/App'
+import About from '../components/About'
+import Inbox from '../components/Inbox'
+import Message from '../components/Message'
 
 export default (
   <Route path="/" component={App}>

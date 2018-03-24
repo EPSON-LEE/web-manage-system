@@ -33,6 +33,10 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    // 引入文件时不需要加后缀
+    extensions: ['.js', '.jsx']
+  },
   devServer: {
     contentBase: "./dist"
   }

@@ -24,9 +24,9 @@ export default class About extends React.Component {
     
     render() {
       console.log(this.props)
-      debugger
       return (
         <div>
+          <span>日历：</span>
           <DatePicker />
           <Button onClick={() => this.props.openModal()}>openModal</Button>
           <Button onClick={() => this.props.getList()}>getList</Button>
@@ -36,6 +36,7 @@ export default class About extends React.Component {
       )
     }
   }
+  
   About.propTypes = {
     list: PropTypes.object,
     openModal: PropTypes.func,
