@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open && node ./server/server.js",
-    "dev": "webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "server": "node ./server/server.js"
   },
   "author": "leejiahao",

@@ -1,11 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 console.log(process.env.NODE_ENV)
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.jsx',
   output: {
     filename: 'bundle.js',
@@ -16,8 +17,22 @@ module.exports = {
       title: 'React BoilerPlate',
       template: './src/index.html'
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist'])
   ],
+  optimization: {
+    runtimeChunk: {
+        name: "manifest"
+    },
+    splitChunks: {
+        cacheGroups: {
+            commons: {
+                test: /[\\/]node_modules[\\/]/,
+                name: "vendor",
+                chunks: "all"
+            }
+        }
+    }
+  },
   module: {
     rules: [
       {
@@ -38,6 +53,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./dist",
+    compress: true,
   }
 };
