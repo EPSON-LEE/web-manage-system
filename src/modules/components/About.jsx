@@ -1,12 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-<<<<<<< HEAD
 import {connect} from 'react-redux'
 import { DatePicker, Button, Modal } from 'antd'
-=======
-// import {connect} from 'react-redux'
-import { DatePicker, Button } from 'antd'
->>>>>>> adea72c835c61f25b69f09d8da2365230212453d
 import { openModal, shutModal, getList } from '../containers/About/action.jsx'
 
 // @connect(state => {
@@ -23,7 +18,6 @@ export default class About extends React.Component {
     constructor(props) {
       super(props)
       this.state = {
-<<<<<<< HEAD
         test: 1,
         modalStatus: false
       }
@@ -33,10 +27,6 @@ export default class About extends React.Component {
 
     componentWillMount() {
       console.log('componentWillMount')
-=======
-        test: 10
-      }
->>>>>>> adea72c835c61f25b69f09d8da2365230212453d
     }
 
     componentWillMount() {
@@ -57,7 +47,6 @@ export default class About extends React.Component {
       return true
     }
 
-<<<<<<< HEAD
     componentWillUpdate() {
       console.log('componentWillUpdate')
     }
@@ -110,32 +99,8 @@ export default class About extends React.Component {
         modalStatus: true
       })
     }
-    
-=======
-    componentWillReceiveProps() {
-    }
-
-    shouldComponentUpdate() {
-      debugger
-    }
->>>>>>> adea72c835c61f25b69f09d8da2365230212453d
-    
-    handleTestButton = () => {
-      console.log(1)
-      debugger
-      this.setState({
-        test: this.state.test + 1
-      }, () => {
-        console.log(this.state.test)
-      })
-    }
 
     render() {
-<<<<<<< HEAD
-      // console.log(this.props)
-=======
-      console.error(this.props)
->>>>>>> adea72c835c61f25b69f09d8da2365230212453d
       return (
         <div>
           <span>日历：</span>
@@ -144,7 +109,6 @@ export default class About extends React.Component {
           <Button onClick={() => this.props.getList()}>getList</Button>
           <Button onClick={() => this.props.shutModal()}>shutModal</Button>
           <h1>list: {this.props.list.modalStatus + '' }</h1>
-<<<<<<< HEAD
           <Button onClick={this.handleTest}>test</Button>
           <h2>{this.state.test}</h2>
           <Button onClick={this.handleTest2}>test2ßß</Button>
@@ -156,10 +120,6 @@ export default class About extends React.Component {
           >
             <Button>美化过的按钮</Button>
           </Modal>
-=======
-          <Button onClick={this.handleTestButton}>test</Button>
-          <span>test: {this.props.dataList && this.props.dataList.modalStatus || 1}</span>
->>>>>>> adea72c835c61f25b69f09d8da2365230212453d
         </div>
       )
     }
