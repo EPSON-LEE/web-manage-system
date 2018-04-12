@@ -1,5 +1,4 @@
-import * as T from './actionType.jsx'
-import { combineReducers } from 'redux'
+import * as T from './actionTypes.jsx'
 
 const initialState = {
   modalStatus: false,
@@ -8,7 +7,7 @@ const initialState = {
   error: false
 }
 
-let dataList = (state = initialState, action) => {
+export let dataList = (state = initialState, action) => {
     switch(action.type) {
       case T.OPEN_MODAL:
         return {
@@ -42,10 +41,3 @@ let dataList = (state = initialState, action) => {
         return state
     }
   }
-
-
-  let root = combineReducers({
-    dataList
-  })
-  
-  export default root

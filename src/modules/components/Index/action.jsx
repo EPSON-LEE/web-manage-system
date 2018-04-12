@@ -1,6 +1,5 @@
 import axios from 'axios'
-import * as T from './actionType.jsx'
-import store from '../../store.jsx'
+import * as T from './actionTypes.jsx'
 
 export let openModal = () => {
     return {

@@ -2,19 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import { DatePicker, Button, Modal } from 'antd'
-import { openModal, shutModal, getList } from '../containers/About/action.jsx'
+import { openModal, shutModal, getList } from './action.jsx'
 
-// @connect(state => {
-//   return {
-//     list: state.dataList
-//   }
-// }, {
-//   openModal,
-//   shutModal,
-//   getList
-// })
-
-export default class About extends React.Component {
+@connect(state => {
+  return {
+    list: state.dataList
+  }
+}, {
+  openModal,
+  shutModal,
+  getList
+})
+export default class Index extends React.Component {
     constructor(props) {
       super(props)
       this.state = {
@@ -22,15 +21,11 @@ export default class About extends React.Component {
         modalStatus: false
       }
       this.test2 = 1
-      console.log('constructor')
+      console.log('constructor1')
     }
 
     componentWillMount() {
       console.log('componentWillMount')
-    }
-
-    componentWillMount() {
-
     }
     
     componentDidMount() {
@@ -125,7 +120,7 @@ export default class About extends React.Component {
     }
   }
   
-  About.propTypes = {
+  Index.propTypes = {
     list: PropTypes.object,
     openModal: PropTypes.func,
     shutModal: PropTypes.func,
