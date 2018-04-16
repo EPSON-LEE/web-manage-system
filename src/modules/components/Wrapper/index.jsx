@@ -5,18 +5,30 @@ import './index.css'
 export default class App extends React.Component{
     render() {
       return (
-        <div class="container">
+        <div className="container">
           <header>
-            <ul>
-              <li><Link to="/index">Index</Link></li>
-              <li><Link to="/inbox">Inbox</Link></li>
-            </ul>
+            <span className='slogan'>This is a Slogan</span>
           </header>
-          <nav>Navigation</nav>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/index">
+                  <span className='link'>Index</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/inbox">
+                  <span className='link'>Inbox</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
           <main>
-            {this.props.children}
+            <div className='content'>
+              {this.props.children}
+            </div>
           </main>
-          <footer>Footer</footer>
+          <footer>superYipe@2018 Created By LeeJiahao</footer>
         </div>
       )
     }
