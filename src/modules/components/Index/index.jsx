@@ -99,7 +99,6 @@ export default class Index extends React.Component {
     render() {
       return (
         <div>
-          <span>日历：</span>
           <DatePicker />
           <Button onClick={() => this.openModal()}>openModal</Button>
           <Button onClick={() => this.props.getList()}>getList</Button>

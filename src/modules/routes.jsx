@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
 import Wrapper from './components/Wrapper/index'
 import Index from './components/Index/index'
-import Inbox from './components/Inbox'
+import Inbox from './components/Inbox/Index'
 import Message from './components/Message'
 
 export default (
