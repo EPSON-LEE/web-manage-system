@@ -7,7 +7,10 @@ console.log(process.env.NODE_ENV)
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.jsx',
+  entry: {
+    index: './src/index.jsx',
+    vendors: './lib/ckeditor'
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')

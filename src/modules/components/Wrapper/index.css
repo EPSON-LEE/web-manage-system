@@ -23,8 +23,38 @@ nav {
   grid-area: nav;
 }
 
+.logo {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.item-list {
+  display: block;
+  margin: 0 auto;
+}
+
+nav li {
+  height: 40px;
+  line-height: 40px;
+}
+
 .link {
   color: hsla(0,0%,100%,.65);
+}
+
+.link-item {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: #1890ff;
+  color: #fff;
 }
 
 main {
