@@ -14,10 +14,12 @@
   "blog": [
     {
       "id": 1,
-      "name": "leejiahao"
+      "header": "This is header1",
+      "content": "<h1>This is header1</h1>"
     }, {
       "id": 2,
-      "name": "leejiahao"
+      "header": "This is header2",
+      "content": "<h1>This is header2<h1>"
     }
   ]
 }

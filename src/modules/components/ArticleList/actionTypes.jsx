@@ -1,0 +1,5 @@
+export const LOADING = 'LOADING'
+export const ERROR = 'ERROR'
+export const SAVE_REDUCER = 'SAVE_REDUCER'
+export const GET_LIST_SUCCESS = 'GET_LIST_SUCCESS'
+export const GET_LIST_ERROR = 'GET_LIST_ERROR'
