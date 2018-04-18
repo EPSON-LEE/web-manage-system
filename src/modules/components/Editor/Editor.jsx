@@ -24,7 +24,7 @@ export default class CKEditor extends Component {
         { name: 'insert', items: ['Image'] },
         { name: 'tools', items: ['Maximize'] }
       ],
-      language: 'zh'
+      language: 'zh-CN'
     }
     CKEDITOR.replace(this.elementName, configuration);
     CKEDITOR.instances[this.elementName].on("change", function () {

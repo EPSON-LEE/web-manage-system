@@ -24,7 +24,7 @@ export default class Article extends React.Component{
         <div className="index">
           <ul>
           {
-            list.map(item => {
+            list.length && list.map(item => {
               return (
                 <li key={item.id}>{item.header}:   
                   <div dangerouslySetInnerHTML={{
