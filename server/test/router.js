@@ -1,0 +1,11 @@
+let route = (handle, pathName) => {
+  console.log("About to route a request for " + pathName)
+  if (typeof handle[pathName] === 'function') {
+    return handle[pathName]()
+  } else {
+    console.log("No request handlers found for " + pathName)
+    return "404 NOT FOUND"
+  }
+}
+
+exports.route = route
