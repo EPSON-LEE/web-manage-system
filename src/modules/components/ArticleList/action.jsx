@@ -25,7 +25,7 @@ export let getList = () => async (dispatch, getState) => {
     //   console.log(getState())
       dispatch(loading())
     try {
-        let response = await axios.get('http://localhost:3000/blog')
+        let response = await axios.get('http://localhost:3000/Tasks')
         await dispatch(saveList(response))
     } catch(err) {
         dispatch(error())
