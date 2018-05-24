@@ -8,6 +8,8 @@ import Message from './components/Message'
 import Editor from './components/Editor/index'
 import Charts from './components/Charts/index'
 import Table from './components/Table/index'
+import HOC from './components/HOC/index'
+import HOC2 from './components/HOC/index2'
 
 export default (
   <Route path="/" component={Wrapper}>
@@ -17,5 +19,7 @@ export default (
     <Route path="/Charts" component={Charts} />
     <Route path="/List" component={List} />
     <Route path="/Table" component={Table} />
+    <Route path="/HOC" component={HOC} />
+    <Route path="/HOC2" component={HOC2} />
   </Route>
 )

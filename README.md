@@ -19,6 +19,11 @@ cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
 # 日志：
 
+2018 05/24
+
+- 基于属性代理（Props Proxy）的HOC的，简单示例 [翻译参考链接](https://blog.rsuitejs.com/2017/08/24/react-hoc-simple-analysis/) 
+-
+
 2018 04/27
 
 - 增加配置式可编辑表格组件

@@ -1,1 +1,1 @@
-export const routeItem = ['Index', 'List', 'Editor', 'Charts', 'Table']
+export const routeItem = ['Index', 'List', 'Editor', 'Charts', 'Table', 'HOC', 'HOC2']
