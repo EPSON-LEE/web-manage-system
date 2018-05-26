@@ -10,6 +10,8 @@ import Charts from './components/Charts/index'
 import Table from './components/Table/index'
 import HOC from './components/HOC/index'
 import HOC2 from './components/HOC/index2'
+import Ref from './components/Ref/index'
+import ErrorHandler from './components/ErrorHandler/index'
 
 export default (
   <Route path="/" component={Wrapper}>
@@ -21,5 +23,7 @@ export default (
     <Route path="/Table" component={Table} />
     <Route path="/HOC" component={HOC} />
     <Route path="/HOC2" component={HOC2} />
+    <Route path="/Ref" component={Ref} />
+    <Route path="/ErrorHandler" component={ErrorHandler} />
   </Route>
 )

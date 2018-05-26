@@ -2,13 +2,13 @@ let exec = require("child_process").exec,
     querystring = require("querystring"),
     formidable = require('formidable'),
     http = require('http'),
-    util = require('util'),
+    util = require('util')
     // fs = require()
 
 let start = (response, postData) => {
   console.log("Request handler 'start' was called.")
 
-  exec("ls -lah", (err, stdout, stderr) => {
+  exec("find  ../../node_modules", (err, stdout, stderr) => {
     response.writeHead(200, {"Content-Type": "text/plain"})
     response.write(stdout)
     response.end()

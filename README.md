@@ -18,6 +18,10 @@ webpack: 4.1.0
 cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
 # 日志：
+2018 05/26
+
+- 升级了React-DOM 16.3 使用新的ref API createRef this.ref = createRef
+- 增加了错误处理Demo
 
 2018 05/24
 

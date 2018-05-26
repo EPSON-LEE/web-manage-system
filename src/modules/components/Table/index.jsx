@@ -17,7 +17,6 @@ const data = [{
 }]
 
 export default class WorkerRolesSetting extends Component {
-
   render() {
     const columns = [{
       title: '职员编号',
