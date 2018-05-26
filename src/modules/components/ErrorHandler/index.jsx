@@ -19,7 +19,7 @@ class Counter extends React.Component {
   
     render() {
         if(this.state.count === 5) {
-            throw new Error('我就是想试试componentDidCatch')
+            throw new Error('try componentDidCatch')
         }
         return (
             <div>

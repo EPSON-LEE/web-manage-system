@@ -1,14 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router'
 import {routeItem} from '../../../../const'
+import {Button} from 'antd'
+import Validate from '../Shared/Utils/PageWrapper'
 import './index.css'
 
-export default class App extends React.Component{
+class App extends React.Component{
+
+    handleLogout = () => {
+      window.login = false
+      this.props.router.push('/')
+    }
     render() {
       return (
         <div className="container">
           <header>
             <span className='slogan'>This is a Slogan</span>
+            <Button onClick={this.handleLogout}>登出</Button>
           </header>
           <nav>
             <div className='logo' />
@@ -38,3 +46,6 @@ export default class App extends React.Component{
       )
     }
   }
+
+  const AppEntry = Validate(App)
+  export default AppEntry
