@@ -1,5 +1,6 @@
 import React from 'react'
 import Login from '../../Login/index'
+import { User } from './utils'
 
 export default function validateLayer(Component) {
     return class Wrapper extends React.Component {
@@ -7,7 +8,7 @@ export default function validateLayer(Component) {
             super()
         }
         render() {
-            if(!window.login) {
+            if(User.userStatus() !== 'true') {
                 // 登录页面
                 return <Login {...this.props} />
             } else {

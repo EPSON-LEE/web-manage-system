@@ -45,6 +45,7 @@ class Counter extends React.Component {
         // You can also log error messages to an error reporting service here
       }
       render() {
+          <span>当数字加到5， componentDidCatch捕捉错误</span>
           if (this.state.errorInfo) {
               return (
                 <div>

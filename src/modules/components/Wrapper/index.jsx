@@ -2,20 +2,22 @@ import React from 'react'
 import { Link } from 'react-router'
 import {routeItem} from '../../../../const'
 import {Button} from 'antd'
-import Validate from '../Shared/Utils/PageWrapper'
+import Validate from '../Shared/Utils/IndentifyValidate.jsx'
+import { User } from '../Shared/Utils/utils'
 import './index.css'
 
 class App extends React.Component{
 
     handleLogout = () => {
-      window.login = false
+      User.Logout()
       this.props.router.push('/')
+      console.error(User)
     }
     render() {
       return (
         <div className="container">
           <header>
-            <span className='slogan'>This is a Slogan</span>
+            <span className='slogan'>This is a lib for testing React features</span>
             <Button onClick={this.handleLogout}>登出</Button>
           </header>
           <nav>

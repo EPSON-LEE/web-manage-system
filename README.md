@@ -13,7 +13,7 @@ react: 16.2.0
 
 webpack: 4.1.0
 
-- webpack4.1.0 中commonschunkplugin插件被废弃，使用splitChunks来进行分包
+webpack4.1.0 中commonschunkplugin插件被废弃，使用splitChunks来进行分包
 
 cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
@@ -22,7 +22,7 @@ cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
 - 升级了React-DOM 16.3 使用新的ref API createRef this.ref = createRef
 - 增加了错误处理Demo
-- 配置全局登录页面、 404页
+- 使用React高级特性componentDidCatch捕捉全局错误， 配置全局登录页面、 404页
 
 2018 05/24
 
