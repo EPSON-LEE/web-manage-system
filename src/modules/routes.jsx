@@ -11,6 +11,7 @@ import Table from './components/Table/index'
 import HOC from './components/HOC/index'
 import HOC2 from './components/HOC/index2'
 import Ref from './components/Ref/index'
+import DnD from './components/DnD/index.jsx'
 import ErrorHandler from './components/ErrorHandler/index'
 import NotFoundPage from './components/NotFoundPage/index'
 
@@ -27,6 +28,7 @@ export default (
       <Route path="/HOC2" component={HOC2} />
       <Route path="/Ref" component={Ref} />
       <Route path="/ErrorHandler" component={ErrorHandler} />
+      <Route path="/DnD" component={DnD} />
     </Route>
     <Route path="*" component={NotFoundPage} />
   </Route>

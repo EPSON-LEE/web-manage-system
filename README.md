@@ -18,6 +18,16 @@ webpack4.1.0 中commonschunkplugin插件被废弃，使用splitChunks来进行�
 cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
 # 日志：
+
+2018 06/19
+
+- 安装mocha
+
+
+2018 05/27
+
+- 增加了react-DnD demo
+
 2018 05/26
 
 - 升级了React-DOM 16.3 使用新的ref API createRef this.ref = createRef

@@ -4,7 +4,8 @@ import {connect} from 'react-redux'
 import { Pagination, Table, Button } from 'antd'
 import { TableGenerator } from './TableGenerator'
 
-class HOCGeneratorTable extends React.Component {
+@TableGenerator
+export default class HOCGeneratorTable extends React.Component {
   constructor(props) {
     super(props)
     // this.instanceName = 'han solo'
@@ -25,4 +26,4 @@ class HOCGeneratorTable extends React.Component {
   }
 }
 
-export default TableGenerator(HOCGeneratorTable)
+// export default TableGenerator(HOCGeneratorTable)
