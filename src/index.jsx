@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
-import { Router, Route, Link, hashHistory } from 'react-router'
+import { Router, hashHistory } from 'react-router'
 import routes from './modules/routes'
 import store from './modules/store'
 import 'antd/dist/antd.css'

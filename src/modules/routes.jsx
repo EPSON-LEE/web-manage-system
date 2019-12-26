@@ -1,24 +1,25 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
-import Wrapper from './components/Wrapper/index'
-import Index from './components/Index/index'
-import List from './components/ArticleList/index'
-import Editor from './components/Editor/index'
-import Charts from './components/Charts/index'
-import Table from './components/Table/index'
-import HOC from './components/HOC/index'
+import { Route, IndexRoute } from 'react-router'
+import Wrapper from './components/Wrapper'
+import Index from './components/Index'
+import Hook from './components/Hook'
+import List from './components/ArticleList'
+import Editor from './components/Editor'
+import Charts from './components/Charts'
+import Table from './components/Table'
+import HOC from './components/HOC'
 import HOC2 from './components/HOC/index2'
-import Ref from './components/Ref/index'
-import DnD from './components/DnD/index.jsx'
-import ErrorHandler from './components/ErrorHandler/index'
-import NotFoundPage from './components/NotFoundPage/index'
+import Ref from './components/Ref'
+import DnD from './components/DnD'
+import ErrorHandler from './components/ErrorHandler'
+import NotFoundPage from './components/NotFoundPage'
 
 export default (
   <Route>
     <Route path="/" component={Wrapper}>
       <IndexRoute component={Index} />
       <Route path="/Index" component={Index} />
+      <Route path="/Hook" component={Hook} />
       <Route path="/Editor" component={Editor} />
       <Route path="/Charts" component={Charts} />
       <Route path="/List" component={List} />

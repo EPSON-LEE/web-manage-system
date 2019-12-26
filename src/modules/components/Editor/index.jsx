@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import CKEditor from './Editor'
 import {connect} from 'react-redux'
 import {Button} from 'antd'
-import { addArticle } from './action.jsx'
+import { addArticle } from './action'
 
 @connect(state => {
   return {

@@ -1,4 +1,4 @@
-import * as T from './actionTypes.jsx'
+import * as T from './actionTypes'
 
 const initialState = {
   modalStatus: false,

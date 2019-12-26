@@ -1,1 +1,0 @@
-export const routeItem = ['Index', 'List', 'Editor', 'Charts', 'Table', 'HOC', 'Ref', 'ErrorHandler', 'DnD']

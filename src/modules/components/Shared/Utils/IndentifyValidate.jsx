@@ -1,5 +1,5 @@
 import React from 'react'
-import Login from '../../Login/index'
+import Login from '../../Login'
 import { User } from './utils'
 
 export default function validateLayer(Component) {

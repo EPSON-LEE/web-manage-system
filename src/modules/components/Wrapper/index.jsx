@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
-import {routeItem} from '../../../../const'
-import {Button} from 'antd'
-import Validate from '../Shared/Utils/IndentifyValidate.jsx'
+import {routeItem} from '../../const'
+import Validate from '../Shared/Utils/IndentifyValidate'
 import { User } from '../Shared/Utils/utils'
 import './index.css'
 

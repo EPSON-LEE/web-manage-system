@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import { getList } from './action.jsx'
+import { getList } from './action'
 
 @connect(state => {
   return {

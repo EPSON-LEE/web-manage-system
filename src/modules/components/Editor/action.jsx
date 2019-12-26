@@ -1,5 +1,5 @@
 import axios from 'axios'
-import * as T from './actionTypes.jsx'
+import * as T from './actionTypes'
 
 export const saveList = (data) => {
   return {

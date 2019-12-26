@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import { DatePicker, Button, Modal } from 'antd'
-import { openModal, shutModal, getList } from './action.jsx'
+import { openModal, shutModal, getList } from './action'
 import styles from './index.css'
 
 @connect(state => {
