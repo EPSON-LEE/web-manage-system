@@ -21,7 +21,7 @@ react: 16.2.0
 
 webpack: 4.1.0
 
-webpack4.1.0 中commonschunkplugin插件被废弃，使用splitChunks来进行分包
+webpack4.1.0 中 commonschunkplugin 插件被废弃，使用 splitChunks 来进行分包
 
 cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
