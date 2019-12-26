@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { Pagination, Table, Button } from 'antd'
 import { TableGenerator } from './TableGenerator'
 
@@ -25,5 +25,3 @@ export default class HOCGeneratorTable extends React.Component {
     )
   }
 }
-
-// export default TableGenerator(HOCGeneratorTable)
