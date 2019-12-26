@@ -60,11 +60,11 @@ Antd  3.2.0 -> 3.26.4
 
 - 升级了React-DOM 16.3 使用新的ref API createRef this.ref = createRef
 - 增加了错误处理Demo
-- 使用React高级特性componentDidCatch捕捉全局错误， 配置全局登录页面、 404页
+- 使用React高级特性 componentDidCatch 捕捉全局错误， 配置全局登录页面、 404页
 
 > 2018 05/24
 
-- 基于属性代理（Props Proxy）的HOC的 [简单示例](https://blog.rsuitejs.com/2017/08/24/react-hoc-simple-analysis/) 
+- 基于属性代理（Props Proxy）的 HOC 的 [简单示例](https://blog.rsuitejs.com/2017/08/24/react-hoc-simple-analysis/) 
 
 > 2018 04/27
 
@@ -106,7 +106,7 @@ Antd  3.2.0 -> 3.26.4
 ```
 2018 04/23
 
-搭建 express + mysql restful接口，[参考 @avanthikameenakshi](https://medium.com/@avanthikameenakshi/building-restful-api-with-nodejs-and-mysql-in-10-min-ff740043d4be)
+搭建 Express + Mysql restful接口，[参考 @avanthikameenakshi](https://medium.com/@avanthikameenakshi/building-restful-api-with-nodejs-and-mysql-in-10-min-ff740043d4be)
 
 
 > 2018 04/20
@@ -134,9 +134,10 @@ Antd  3.2.0 -> 3.26.4
 - 引入favicon
 
 > 2018/03/08
+
+```
 - osx: 10.13.2
 - node: 8.9.4.2
 - react: 16.2.0
 - webpack: 4.1.0
-
-🐶
+```
