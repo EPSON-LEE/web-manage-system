@@ -16,10 +16,6 @@ class App extends React.Component{
     render() {
       return (
         <div className="container">
-          <header>
-            <span className='slogan'>This is a lib for testing React features</span>
-            <Button onClick={this.handleLogout}>登出</Button>
-          </header>
           <nav>
             <div className='logo' />
               <ul className='item-list'>
