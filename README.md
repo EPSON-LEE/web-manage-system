@@ -6,8 +6,7 @@
 
 ```
 安装 npm i
-
-开发环境运行 npm run start↕
+运行 npm run start
 ```
 
 ### 环境
@@ -32,7 +31,8 @@ cross-en: 5.1.0  执行脚本的时候，读取环境，进行不同的操作
 
 > 2019 12/25 时隔一年半唤醒项目 🤖
 
-️- ⚠️ 唤醒安装依赖时出现问题，五分钟后重新唤醒：
+️
+- ⏰ 唤醒安装依赖时出现问题，五分钟后重新唤醒
 
 ```
 npm ERR! Unexpected end of JSON input while parsing near
