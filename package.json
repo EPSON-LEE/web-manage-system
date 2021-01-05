@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "antd": "^3.26.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "echarts": "^4.0.4",
     "echarts-for-react": "^2.0.8",
     "form-render": "^0.4.4",
